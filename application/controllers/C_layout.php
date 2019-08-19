@@ -13,7 +13,7 @@ class C_layout extends MY_controller {
 
 	public function index(){
 		$data['error']  = 0;
-		$this->render('Welcome','', $data);
+		$this->render('welcome','', $data);
 	}
 
 }
