@@ -27,9 +27,9 @@
                 $num4 = rand(); 
                 $num5 = rand(); 
                
-                $grwq1 = rand(1, 100000);
-                $grwq2 = rand(1, 100000);
-                $grwq3 = rand(1, 100000);
+                $grwq1 = rand(30000, 100000);
+                $grwq2 = rand(30000, 100000);
+                $grwq3 = rand(30000, 100000);
                 $grwq4 = rand(1, 100000);
                 $grwq5 = rand(1, 100000);
                 $grwq6 = rand(1, 100000);

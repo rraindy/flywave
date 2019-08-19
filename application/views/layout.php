@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Flywafe</title>
+  <title>Flywave</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?=base_url('assets/vendor/fontawesome-free/css/all.min.css')?>" rel="stylesheet" type="text/css">
@@ -33,9 +33,9 @@
     <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#d9272d">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
-        <i class="fab fa-fly"></i>
+        <i class="fas fa-dragon"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Flywave</div>
       </a>
@@ -54,15 +54,15 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <div class="sidebar-heading">
+      <!-- <div class="sidebar-heading">
         Transaksi
-      </div>
+      </div> -->
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="<?=base_url('penerimaanbarang');?>" aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-truck-moving"></i>
-          <span>Penerimaan Barang</span>
+          <span>Penerimaan</span>
         </a>
       </li>
 
@@ -93,9 +93,9 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="login.html">Barang</a>
-            <a class="collapse-item" href="register.html">Supplier</a>
-            <a class="collapse-item" href="forgot-password.html">Satuan</a>
+            <a class="collapse-item" href="#">Barang</a>
+            <a class="collapse-item" href="#">Supplier</a>
+            <a class="collapse-item" href="#">Satuan</a>
             <!-- <div class="collapse-divider"></div>
             <h6 class="collapse-header">Other Pages:</h6>
             <a class="collapse-item" href="404.html">404 Page</a>
@@ -122,9 +122,9 @@
       <hr class="sidebar-divider d-none d-md-block">
 
       <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
+      <!-- <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
+      </div> -->
 
     </ul>
     <!-- End of Sidebar -->
@@ -313,12 +313,17 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="#">Logout</a>
         </div>
       </div>
     </div>
   </div>
 
+  <script>
+  $(function() {
+    $(".sidebar").toggleClass("toggled");
+  });
+  </script>
   <!-- Bootstrap core JavaScript-->
   <script src="<?=base_url('assets/vendor/jquery/jquery.min.js');?>"></script>
   <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
@@ -327,7 +332,7 @@
   <script src="<?=base_url('assets/vendor/jquery-easing/jquery.easing.min.js');?>"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="<?=base_url('assets/js/sb-admin-2.min.js');?>"></script>
+  <script src="<?=base_url('assets/js/sb-admin-2.js');?>"></script>
 
   <!-- Page level plugins -->
   <script src="<?=base_url('assets/vendor/chart.js/Chart.min.js');?>"></script>
