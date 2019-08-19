@@ -51,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'C_layout/index';
 $route['dashboard'] = 'C_dashboard/index';
+$route['penerimaanbarang'] = 'C_penerimaan_barang/v_penerimaan_barang';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

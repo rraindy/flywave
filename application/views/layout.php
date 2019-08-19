@@ -17,6 +17,10 @@
 
   <!-- Custom styles for this template-->
   <link href="<?=base_url('assets/css/sb-admin-2.min.css');?>" rel="stylesheet">
+  <link href="<?=base_url('assets/vendor/datatables/dataTables.bootstrap4.min.css')?>" rel="stylesheet">
+  <link rel="stylesheet" href="<?=base_url('assets/selectize/css/selectize.css')?>">
+  <script src="<?=base_url('assets/js/jquery-3.4.1.min.js');?>"></script>
+  <script src="<?=base_url('assets/selectize/js/standalone/selectize.js')?>"></script>
 
 </head>
 
@@ -26,7 +30,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#f57d81">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color:#d9272d">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -56,7 +60,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="<?=base_url('penerimaanbarang');?>" aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-truck-moving"></i>
           <span>Penerimaan Barang</span>
         </a>
@@ -271,26 +275,30 @@
       </div>
       <!-- End of Main Content -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer" style="background-color:#9e9e9e">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto" style="color:white">
-            <span>Copyright &copy; pos Flywafe 2019</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
+      
 
     </div>
     <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
+<!-- Footer -->
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
+
+    
   </a>
+<!-- 
+  <!-- <footer class="" style="background-color:#9e9e9e">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto" style="color:white">
+            <span>Copyright &copy; pos Flywafe 2019ss</span>
+          </div>
+        </div>
+      </footer> -->
+      <!--End of Footer -->
 
   <!-- Logout Modal-->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
